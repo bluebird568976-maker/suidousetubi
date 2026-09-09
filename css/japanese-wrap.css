@@ -1,0 +1,23 @@
+/* 日本語の自然な改行を優先する共通ルール */
+html[lang="ja"],body{line-break:strict;word-break:normal;overflow-wrap:normal;hyphens:none}
+
+@supports (word-break:auto-phrase){
+  html[lang="ja"],body{word-break:auto-phrase}
+  p,li,dt,dd,label,.hero-text,.section-lead,.page-hero p,.service-step p,.business-copy p,.message-copy p,.form-note{word-break:auto-phrase;text-wrap:pretty}
+  h1,h2,h3,.section-title{word-break:auto-phrase;text-wrap:balance}
+}
+
+.jp-flow{line-break:strict;overflow-wrap:normal;hyphens:none}
+@supports not (word-break:auto-phrase){
+  .jp-flow{word-break:keep-all}
+  .jp-flow .jp-phrase{display:inline-block;max-width:100%;white-space:nowrap}
+  .jp-flow wbr{display:inline}
+}
+@supports (word-break:auto-phrase){
+  .jp-flow .jp-phrase{display:inline;max-width:none;white-space:normal}
+  .jp-flow wbr{display:none}
+}
+
+.hero-inner,.hero-sign,.waterline-item,.service-step>*,.trust-inner>*,.message-layout>*,.company-row>*,.focus-block,.business-row>*,.contact-layout>*,.form-grid>*,.contact-cta-inner>*{min-width:0}
+
+@media(max-width:760px){p,li,dt,dd,label{max-width:100%}}
