@@ -3,8 +3,8 @@ html[lang="ja"],body{line-break:strict;word-break:normal;overflow-wrap:normal;hy
 
 @supports (word-break:auto-phrase){
   html[lang="ja"],body{word-break:auto-phrase}
-  p,li,dt,dd,label,.hero-text,.section-lead,.page-hero p,.service-step p,.business-copy p,.message-copy p,.form-note{word-break:auto-phrase;text-wrap:pretty}
-  h1,h2,h3,.section-title{word-break:auto-phrase;text-wrap:balance}
+  p,li,dt,dd,label,.hero-text,.section-lead,.page-hero p,.service-panel p,.business-entry p,.about-lead p,.form-note{word-break:auto-phrase;text-wrap:pretty}
+  h1,h2,h3,.section-title,.page-title,.editorial-copy blockquote{word-break:auto-phrase;text-wrap:balance}
 }
 
 .jp-flow{line-break:strict;overflow-wrap:normal;hyphens:none}
@@ -18,6 +18,6 @@ html[lang="ja"],body{line-break:strict;word-break:normal;overflow-wrap:normal;hy
   .jp-flow wbr{display:none}
 }
 
-.hero-inner,.hero-sign,.waterline-item,.service-step>*,.trust-inner>*,.message-layout>*,.company-row>*,.focus-block,.business-row>*,.contact-layout>*,.form-grid>*,.contact-cta-inner>*{min-width:0}
+.hero-grid>*,.fact-item,.editorial-intro>*,.service-index-row>*,.statement-inner>*,.page-hero-grid>*,.about-lead>*,.company-row>*,.service-panel>*,.business-entry>*,.contact-stage>*,.form-grid>*,.contact-cta-inner>*{min-width:0}
 
 @media(max-width:760px){p,li,dt,dd,label{max-width:100%}}
