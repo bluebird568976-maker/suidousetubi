@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 86" role="img" aria-labelledby="title desc">
+  <title id="title">○○○○株式会社 サンプルロゴ</title>
+  <desc id="desc">水滴と配管を抽象化した架空ロゴ</desc>
+  <rect width="360" height="86" fill="none"/>
+  <g transform="translate(3 5)">
+    <path d="M39 3C27 20 13 34 13 49c0 15 11 26 26 26s26-11 26-26C65 34 51 20 39 3Z" fill="#0f766e"/>
+    <path d="M24 51c8 7 22 8 32-1" fill="none" stroke="#d8f3ef" stroke-width="6" stroke-linecap="round"/>
+    <path d="M18 17h15v11M60 17H45v11" fill="none" stroke="#0b3b47" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <g fill="#143642">
+    <text x="88" y="39" font-family="'Yu Gothic','Noto Sans JP',sans-serif" font-size="26" font-weight="700">○○○○株式会社</text>
+    <text x="90" y="62" font-family="Arial,sans-serif" font-size="10" font-weight="700" letter-spacing="2">WATER SUPPLY &amp; DRAINAGE</text>
+  </g>
+</svg>
